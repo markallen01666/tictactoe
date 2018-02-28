@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Tic Tac Toe web app
+    Demonstration project using HTML5, CSS3, Javascript, Bootstrap, jQuery
+
+    Player v Computer game showcasing Bootstrap formatting, jQuery for page updates and Javascript for logic
+
+    Mark Allen - Freelance Web Developer - 2017
+-->
+
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+<!-- Load fonts, script, stylesheet, Bootstrap 3 and jQuery 3 -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent Marker" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body id="bg">
+  <div class="container">
+    <div class="row offset">
+      <div class="col-xs-12 text-center">
+        <h1 id="appTitle">Tic Tac Toe</h1>
+      </div>
+    </div>
+    <!-- Board layout -->
+    <div class="row offset">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 col-xs-12 board-container">
+        <div class="col-xs-4 board-cell text-center" id="cell0"><h1>&nbsp;</h1></div>
+        <div class="col-xs-4 board-cell text-center" id="cell1"><h1>&nbsp;</h1></div>
+        <div class="col-xs-4 board-cell text-center" id="cell2"><h1>&nbsp;</h1></div>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 col-xs-12 board-container">
+        <div class="col-xs-4 board-cell text-center" id="cell3"><h1>&nbsp;</h1></div>
+        <div class="col-xs-4 board-cell text-center" id="cell4"><h1>&nbsp;</h1></div>
+        <div class="col-xs-4 board-cell text-center" id="cell5"><h1>&nbsp;</h1></div>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 col-xs-12 board-container">
+        <div class="col-xs-4 board-cell text-center" id="cell6"><h1>&nbsp;</h1></div>
+        <div class="col-xs-4 board-cell text-center" id="cell7"><h1>&nbsp;</h1></div>
+        <div class="col-xs-4 board-cell text-center" id="cell8"><h1>&nbsp;</h1></div>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+    <div class="row offset">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-2 col-xs-4 text-center players" id="playerStart">
+      </div>
+      <div class="col-sm-2 col-xs-4 text-center" id="instruction">
+      </div>
+      <div class="col-sm-2 col-xs-4 text-center players" id="computerStart">
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 col-xs-12 text-center" id="playAgain">
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+</body>
+</html>

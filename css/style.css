@@ -1,0 +1,85 @@
+/*  Tic Tac Toe webapp styling
+    M Allen: Freelance Web Developer - 2017
+*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #F9EDD7;
+}
+
+img {
+  height: 5em;
+}
+
+#bg {
+  background-color: #6C7A89;
+}
+
+.board-container {
+    display: table; /* Make the container element behave like a table */
+}
+
+.board-cell {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+    font-family: 'Permanent Marker', sans-serif;
+    color: black;
+    background-color: #F9EDD7;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-style: solid;
+    border-width: medium;
+    border-color: silver;
+    border-radius: 2em;
+    user-select: none;
+}
+
+.winner {
+  background-color: #33CC33;
+}
+
+.winnerText {
+  color: #33CC33;
+}
+
+.loserText {
+  color: #bdc3c7;
+}
+
+.gameSymbol {
+  user-select: none;
+  font-family: 'Permanent Marker', sans-serif;
+}
+
+.offset {
+  margin-top: 0.25%;
+}
+
+.img-offset {
+  margin-top: 2%;
+}
+
+.players {
+  user-select: none;
+  letter-spacing: 0.5vw;
+}
+
+#appTitle {
+  font-size: 3.5em;
+  letter-spacing: 1vw;
+  user-select: none;
+}
+
+#appDescription {
+  user-select: none;
+  font-size: 275%;
+}
+
+#instruction {
+  user-select: none;
+  letter-spacing: 0.5vw;
+}
+
+#playAgain {
+  user-select: none;
+  letter-spacing: 0.5vw;
+}
